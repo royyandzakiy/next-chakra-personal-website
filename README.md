@@ -60,7 +60,7 @@ Did a quick implementation, learning from this video below
         export default customTheme; // digunakan sebagai theme={customTheme} di <ChakraProvider theme={customTheme} ...>
     ```
 - extendTheme = digunakan untuk override theme yang sudah ada dan bikin customTheme
-- ...ChakraTheme = digunakan untuk
+- ...ChakraTheme = digunakan untuk menarik settingan default yang sudah ada
 
 ### _app.js
 - <Component {...pageProps} /> = adalah isian wajib yang perlu ada di _app.js. fungsinya sebagai komponen diisi sebagai isian dari SEMUA page yang dibuka
