@@ -11,9 +11,9 @@ Did a quick implementation, learning from this video below
     - tambahkan `...ChakraTheme` pada tiap bagian yang diedit, agar tidak hilang default designnya
 - setup environment chakra-ui:
     - `_app.js`
-        - <ChakraProvider resetCSS theme={customTheme}>: untuk setup theme yang sudah dibuat
-        - <ColorModeProvider>: untuk kasih hook useColorMode()
-        - <GlobalStyles>: untuk setup style utama untuk semua web. disini di setup juga style untuk `html` dan `__next`
+        - `<ChakraProvider resetCSS theme={customTheme}>`: untuk setup theme yang sudah dibuat
+        - `<ColorModeProvider>`: untuk kasih hook useColorMode()
+        - `<GlobalStyles>`: untuk setup style utama untuk semua web. disini di setup juga style untuk `html` dan `__next`
     - `_document.js`
         - setup `<ColorModeScript />`
 - `index.js`
@@ -21,14 +21,14 @@ Did a quick implementation, learning from this video below
 - `container.js`
     - buat `<StickyNav />` sebagai `nav`, tinggal di desain, sudah bisa stick keatas dan berubah
     - buat `<Flex />` sebagai `main`
-    - kasih { children }
+    - kasih `{ children }` didalam `<Flex />` agar bisa menambahkan isian di page luar, misal `index.js` atau `blog.js`
 
 ![](docs/ss.png)
 
 ## What I have learned:
-- konsep `_app.js` dan `_document.js` = sebagai fondasi dari nextjs. chakra-ui mengakses file-file ini sehingga perlu di edit agar jadi global style
-- `chakra-ui` = cara setup environmentnya di project nextjs dan cara menambahkannya ke components. juga menambahkan colorMode yang memberikan logic ke in-component css.
-- inline css with `/*CSS stuff here*/` = juga belajar tentang inline css yang bisa ditambahkan langsung ke kode
+- konsep `_app.js` dan `_document.js` = sebagai fondasi dari nextjs. chakra-ui mengakses file-file default ini sehingga perlu di edit agar bisa menambahkan chakra-ui sebagia global style
+- `chakra-ui` = cara setup environmentnya di project nextjs dan cara menambahkannya ke components. juga menambahkan `colorMode` yang memberikan logic ke in-component css.
+- inline css with `css\`/*CSS stuff here*/\`` = juga belajar tentang inline css yang bisa ditambahkan langsung ke kode
 - `index.js` = belajar bahwa ini merupakan page utama yang digunakan sebagai template oleh page lain yang mengisi
 - `container.js` = belajar menggunakan sebuah wrapper atau container component yang berisi template page yang akan digunakan oleh page lain yang mengisi
 
@@ -88,5 +88,5 @@ Did a quick implementation, learning from this video below
 
 ### Container.js
 - `useColorMode()` = sebuah react hook yang bisa dipake utk switch antara variable 'light' atau 'dark'
-- `StickyNav = styled(Flex)\` CSS stuff in here \`` = adalah cara membuat komponen secara cepat dan bisa memasukkan juga custom CSS kedalamnya
+- `StickyNav = styled(Flex)'CSS stuff in here'` = adalah cara membuat komponen secara cepat dan bisa memasukkan juga custom CSS kedalamnya
 - `children` = adalah semua hal yang dimasukkan didalam tag, yaitu `<Container>` "children" `</Container>`
