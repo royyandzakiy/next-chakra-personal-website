@@ -6,14 +6,24 @@ Did a quick implementation, learning from this video below
 [Chakra UI + Next JS Quickstart - Build A Personal Website And Blog (2 of 2)](https://www.youtube.com/watch?v=G6_qqMrfTQg)
 
 ## Key Takeaways:
+- `theme.js`
+    - `fonts`, `overrides`, `breakpoints`, `customTheme=extendTheme{overrides}`
+    - tambahkan `...ChakraTheme` pada tiap bagian yang diedit, agar tidak hilang default designnya
 - setup environment chakra-ui:
     - `_app.js`
         - <ChakraProvider resetCSS theme={customTheme}>: untuk setup theme yang sudah dibuat
         - <ColorModeProvider>: untuk kasih hook useColorMode()
         - <GlobalStyles>: untuk setup style utama untuk semua web. disini di setup juga style untuk `html` dan `__next`
     - `_document.js`
+        - setup `<ColorModeScript />`
 - `index.js`
+    - isi dengan `<Head />` isian (misal `<Stack />`), dan masukkan semua dalam  `<Container />`
 - `container.js`
+    - buat `<StickyNav />` sebagai `nav`, tinggal di desain, sudah bisa stick keatas dan berubah
+    - buat `<Flex />` sebagai `main`
+    - kasih { children }
+
+![](docs/ss.png)
 
 ## What I have learned:
 - konsep `_app.js` dan `_document.js` = sebagai fondasi dari nextjs. chakra-ui mengakses file-file ini sehingga perlu di edit agar jadi global style
