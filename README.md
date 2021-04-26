@@ -5,6 +5,7 @@ Did a quick implementation, learning from this video below
 [Chakra UI + Next JS Quickstart - Build A Personal Website And Blog (1 of 2)](https://www.youtube.com/watch?v=lhOvI9s5gQY)
 [Chakra UI + Next JS Quickstart - Build A Personal Website And Blog (2 of 2)](https://www.youtube.com/watch?v=G6_qqMrfTQg)
 
+---
 ## Key Takeaways:
 - `theme.js`
     - `fonts`, `overrides`, `breakpoints`, `customTheme=extendTheme{overrides}`
@@ -25,7 +26,8 @@ Did a quick implementation, learning from this video below
 
 ![](docs/ss.png)
 
-## What I have learned:
+---
+## What I have learned (Detailed):
 - konsep `_app.js` dan `_document.js` = sebagai fondasi dari nextjs. chakra-ui mengakses file-file default ini sehingga perlu di edit agar bisa menambahkan chakra-ui sebagia global style
 - `chakra-ui` = cara setup environmentnya di project nextjs dan cara menambahkannya ke components. juga menambahkan `colorMode` yang memberikan logic ke in-component css.
 - inline css with `css\`/*CSS stuff here*/\`` = juga belajar tentang inline css yang bisa ditambahkan langsung ke kode
