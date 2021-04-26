@@ -1,6 +1,9 @@
 # Chakra UI Tutorial
 
-[Chakra UI + Next JS Quickstart - Build A Personal Website And Blog (1 of 2)](https://www.youtube.com/watch?v=lhOvI9s5gQY&list=PLJFB6-PFBLVNqD6SkCgR9t1CPZDXB5EJ2&index=4&ab_channel=BenjaminCarlson)
+Did a quick implementation, learning from this video below
+
+[Chakra UI + Next JS Quickstart - Build A Personal Website And Blog (1 of 2)](https://www.youtube.com/watch?v=lhOvI9s5gQY)
+[Chakra UI + Next JS Quickstart - Build A Personal Website And Blog (2 of 2)](https://www.youtube.com/watch?v=G6_qqMrfTQg)
 
 ## Key Takeaways:
 - setup environment chakra-ui:
